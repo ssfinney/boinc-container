@@ -1,4 +1,6 @@
 FROM alpine:latest 
+
+# I've copied this from Ric, he started this Dockerfile!
 MAINTAINER Ric Harvey <ric@ngineered.co.uk>
 
 
@@ -14,4 +16,3 @@ WORKDIR /var/lib/boinc
 
 ENTRYPOINT ["/usr/bin/boinc", "--allow_remote_gui_rpc", "--attach_project"]
 CMD ["www.worldcommunitygrid.org", "983535_e185433cff95d3c7a8a9d29926f3138a"]
-
